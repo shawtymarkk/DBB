@@ -77,7 +77,7 @@ public class Main extends Configs {
                             + Const.LAST_LOCALE + " = ?, "
                             + Const.REG_LOCALE + " = ?, "
                             + Const.LAST_VIEW_DISTANCE + " = ?, "
-                            + Const.REG_VIEW_DISTANCE + " = ? WHERE " + Const.NAME + " = ?)";
+                            + Const.REG_VIEW_DISTANCE + " = ? WHERE " + Const.NAME + " = ?";
                     PreparedStatement preparedStatement = yDbConnection.prepareStatement(updateString);
                     preparedStatement.setString(1, anResultSet.getString(Const.NAME));
                     preparedStatement.setString(2, anResultSet.getString(Const.LAST_IP));
